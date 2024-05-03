@@ -20,7 +20,7 @@ const socialMediaLinks = {
   github: "https://github.com/okunola11",
   linkedin: "https://www.linkedin.com/in/waas",
   gmail: "abdayoade@gmail.com",
-  twitter: "https://www.linkedin.com/in/waas",
+  twitter: "https://twitter.com/AbdulAyo4",
   blog: "https://nextjs-mdx-blog-iota.vercel.app/projects",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -91,12 +91,12 @@ const skillsSection = {
 
 // Education Section
 
-const educationInfo = {
+const educationSection = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Bells University",
-      logo: require("./assets/images/harvardLogo.png"),
+      //   logo: require("/images/bells.jpg"),
       subHeader:
         "Bachelor of Engineering in Electrical and Electronics Engineering",
       duration: "October 2018 - August 2023",
@@ -106,4 +106,45 @@ const educationInfo = {
       ],
     },
   ],
+};
+
+// Projects Section
+
+const projectSection = {
+  title: "Projects",
+  subtitle: "SOME PROJECTS I HAVE WORKED ON WITH VARIOUS TECH STACKS",
+  projects: [
+    {
+      //   image: require(""),
+      projectName: "Al Amin Schools",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "",
+        },
+        //  you can add extra buttons here.
+      ],
+    },
+    {
+      //   image: require(""),
+      projectName: "Mdx Blog",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "",
+        },
+      ],
+    },
+  ],
+  display: true, // Set false to hide this section, defaults to true
+};
+
+export {
+  heroGreeting,
+  socialMediaLinks,
+  skillsSection,
+  educationSection,
+  projectSection,
 };

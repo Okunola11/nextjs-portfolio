@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import { heroGreeting } from "../portfolio";
+import { headerAvatar, heroGreeting } from "../portfolio";
 import { segwick } from "../fonts";
+import { AvatarIcon } from "@/components/HeaderAvatar";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -36,7 +37,10 @@ export default function Header() {
             <div className="flex gap-2 items-center md:gap-4">
               <Link className="text-gray-500 dark:text-white" href="">
                 <span className="sr-only">Okunola Abdulwasiu</span>
-                {/* AVATAR TO BE PLACED HERE */}
+                <AvatarIcon
+                  imgSrc={headerAvatar.image}
+                  fallback={headerAvatar.fallback}
+                />
               </Link>
               {/* <h1 className="text-gray-900 dark:text-white font-bold text-xl hidden md:block">
                 <Link href="/">{heroGreeting.username}</Link>

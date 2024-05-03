@@ -2,6 +2,12 @@
 
 import emoji from "react-easy-emoji";
 
+// Header Avatar
+const headerAvatar = {
+  image: "/images/okunola.png",
+  fallback: "OA",
+};
+
 // Hero section
 
 const heroGreeting = {
@@ -142,6 +148,7 @@ const projectSection = {
 };
 
 export {
+  headerAvatar,
   heroGreeting,
   socialMediaLinks,
   skillsSection,

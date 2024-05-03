@@ -1,6 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
-<Avatar>
-  <AvatarImage src="/images/okunola.png" />
-  <AvatarFallback>OA</AvatarFallback>
-</Avatar>;
+type Props = {
+  fallback: string;
+  imgSrc: string;
+};
+
+export function AvatarIcon({ imgSrc, fallback }: Props) {
+  return (
+    <Avatar>
+      <AvatarImage src={imgSrc} />
+      <AvatarFallback>{fallback}</AvatarFallback>
+    </Avatar>
+  );
+}

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import { headerAvatar, heroGreeting } from "../portfolio";
-import { segwick } from "../fonts";
-import { AvatarIcon } from "@/components/HeaderAvatar";
+import { headerAvatar, heroGreeting } from "../../portfolio";
+import { segwick } from "../../fonts";
+import { AvatarIcon } from "@/app/components/header/HeaderAvatar";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -31,7 +31,7 @@ export default function Header() {
   return (
     //from-gray-900 via-blue-900 to-gray-900
     <>
-      <header className="bg-white dark:bg-slate-950 p-1 sticky top-0 drop-shadow-xl z-20">
+      <header className="bg-white dark:bg-slate-950 border-b sticky top-0 drop-shadow-xl z-20">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex gap-2 items-center md:gap-4">
@@ -42,15 +42,12 @@ export default function Header() {
                   fallback={headerAvatar.fallback}
                 />
               </Link>
-              {/* <h1 className="text-gray-900 dark:text-white font-bold text-xl hidden md:block">
-                <Link href="/">{heroGreeting.username}</Link>
-              </h1> */}
               <Link href="/">
-                <span className="text-[#868e96]"> &lt;</span>
+                <span className="text-neutral-500"> &lt;</span>
                 <span className={`font-bold text-xl px-2 ${segwick.className}`}>
                   {heroGreeting.username}
                 </span>
-                <span className="text-gray-500">/&gt;</span>
+                <span className="text-neutral-500">/&gt;</span>
               </Link>
             </div>
 

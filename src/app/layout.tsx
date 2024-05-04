@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./fonts";
+import Header from "./components/container/Header";
 
 export const metadata: Metadata = {
   title: "Okunola Abdulwasiu",
@@ -14,8 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`dark:bg-slate-950/95 ${inter.className}`}>
-        {children}
+      <body className={`dark:bg-slate-950 ${inter.className}`}>
+        <Header />
+        <main className="mx-5 p-2 md:mx-10 md:p-5">{children}</main>
       </body>
     </html>
   );

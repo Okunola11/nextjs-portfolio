@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { socialMediaLinks } from "@/app/portfolio";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import XIcon from "@mui/icons-material/X";
-import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXTwitter,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function SocialMedia() {
   if (!socialMediaLinks.display) {
@@ -18,7 +22,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHubIcon fontSize="large" />
+          <FontAwesomeIcon icon={faGithub} />
         </Link>
       ) : null}
 
@@ -29,7 +33,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedInIcon fontSize="large" />
+          <FontAwesomeIcon icon={faLinkedin} />
         </Link>
       ) : null}
 
@@ -40,7 +44,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MailOutlinedIcon fontSize="large" />
+          <FontAwesomeIcon icon={faEnvelope} />
         </Link>
       ) : null}
 
@@ -51,7 +55,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <XIcon fontSize="large" />
+          <FontAwesomeIcon icon={faXTwitter} />
         </Link>
       ) : null}
     </div>

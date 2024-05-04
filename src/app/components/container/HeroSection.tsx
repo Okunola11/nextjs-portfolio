@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="mt-4 md:mt-8 flex flex-col-reverse md:flex-row w-full gap-8 justify-center self-center"
+      className="mt-4 md:mt-8 flex flex-col-reverse md:flex-row w-full gap-8 justify-center self-center custom-min-height border-b"
     >
       <div className="flex-1">
         <div className="flex flex-col gap-2 w-full">
@@ -26,8 +26,9 @@ export default function HeroSection() {
             </span>{" "}
             <span className="wave-emoji">{emoji("👋")}</span>
           </h1>
-          {/* <p className="text-xl md:text-xl">{heroGreeting.subtitle}</p> */}
+
           <GenerateText words={heroGreeting.subtitle} />
+
           <SocialMedia />
 
           <div className="flex gap-3">
@@ -39,7 +40,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex-1 grid place-content-center">
+      <div className="flex-1 flex justify-center">
         <ProfileImage />
       </div>
     </section>

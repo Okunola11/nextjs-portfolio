@@ -8,8 +8,8 @@ export default function MyImage() {
           className="rounded-xl"
           src="/images/okunola.png"
           alt="Okunola Abdulwasiu"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
         />
       </div>
     </div>

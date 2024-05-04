@@ -1,6 +1,5 @@
 /* This file contains all data for the Portfolio Project */
 
-import emoji from "react-easy-emoji";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,

@@ -10,7 +10,7 @@ export default function SoftwareSkill() {
           return (
             <li
               key={i}
-              className="inline mr-5 mb-5 text-4xl text-[#868e96] hover:text-blue-400"
+              className="inline mr-5 mb-5 text-4xl dark:text-[#868e96] hover:text-blue-400"
             >
               <FontAwesomeIcon
                 fontSize={50}

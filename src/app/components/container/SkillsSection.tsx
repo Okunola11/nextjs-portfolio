@@ -15,7 +15,7 @@ export default function SkillsSection() {
         </div>
         <div className="flex-1">
           <h1 className="text-4xl mb-6">{skillsSection.title} </h1>
-          <p className="text-[#868e96] mb-4">{skillsSection.subTitle}</p>
+          <p className="dark:text-[#868e96] mb-4">{skillsSection.subTitle}</p>
           <SoftwareSkill />
           <div>
             {skillsSection.skills.map((skills, i) => {

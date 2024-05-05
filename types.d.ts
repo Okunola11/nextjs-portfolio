@@ -32,6 +32,13 @@ type Projects = {
       backendLink?: string;
     };
     imgSrc: string;
+    imgAlt: string;
   }[];
   display?: boolean;
 };
+
+type Content = {
+  title: string;
+  description: JSX.Element;
+  content: JSX.Element;
+}[];

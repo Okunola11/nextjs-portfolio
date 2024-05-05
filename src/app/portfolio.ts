@@ -139,6 +139,7 @@ const projectSection: Projects = {
         backendLink: "",
       },
       imgSrc: "",
+      imgAlt: "Waasi Blog",
     },
     {
       title: "Al Amin Schools",
@@ -152,6 +153,7 @@ const projectSection: Projects = {
         backendLink: "https://github.com/Okunola11/Al-Amin-Backend",
       },
       imgSrc: "",
+      imgAlt: "Al Amin",
     },
     {
       title: "Chun L. techNotes",
@@ -165,6 +167,7 @@ const projectSection: Projects = {
         backendLink: "https://github.com/Okunola11/ticketingNotes-api",
       },
       imgSrc: "",
+      imgAlt: "Chun L. techNotes",
     },
     {
       title: "Python Weather App",
@@ -178,6 +181,7 @@ const projectSection: Projects = {
         backendLink: "",
       },
       imgSrc: "",
+      imgAlt: "Weather App",
     },
     {
       title: "Acme Rockets",
@@ -191,6 +195,7 @@ const projectSection: Projects = {
         backendLink: "",
       },
       imgSrc: "",
+      imgAlt: "Acme Rockets",
     },
   ],
   display: true, // Set false to hide this section, defaults to true

@@ -8,3 +8,12 @@ type Skills = {
   }[];
   display: boolean;
 };
+
+type School = {
+  schoolName: string;
+  logo: any;
+  subHeader: string;
+  duration: string;
+  grade: string;
+  descBullets: string[];
+};

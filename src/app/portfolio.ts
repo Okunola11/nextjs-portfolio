@@ -105,14 +105,17 @@ const educationSection = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Bells University",
-      //   logo: require("/images/bells.jpg"),
+      schoolName: "Bells University of Technology",
+      logo: "/images/bells.jpg",
       subHeader:
         "Bachelor of Engineering in Electrical and Electronics Engineering",
       duration: "October 2018 - August 2023",
+      grade: "4.24/5.0",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Software Development Life Cycle",
+        "Computer Logic",
+        "Software Packages in Engineering",
+        "Control systems ",
       ],
     },
   ],

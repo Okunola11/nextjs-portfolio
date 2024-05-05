@@ -14,7 +14,7 @@ export default function SkillsSection() {
           <DisplayLottie animationData={codingPerson} />
         </div>
         <div className="flex-1">
-          <h1 className="text-4xl mb-6">{skillsSection.title} </h1>
+          <h1 className="text-4xl md:text-5xl mb-6">{skillsSection.title} </h1>
           <p className="dark:text-[#868e96] mb-4">{skillsSection.subTitle}</p>
           <SoftwareSkill />
           <div>

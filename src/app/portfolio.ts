@@ -123,32 +123,74 @@ const educationSection = {
 
 // Projects Section
 
-const projectSection = {
+const projectSection: Projects = {
   title: "Projects",
   subtitle: "SOME PROJECTS I HAVE WORKED ON WITH VARIOUS TECH STACKS",
   projects: [
     {
-      //   image: require(""),
-      projectName: "Al Amin Schools",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "",
-        },
-        //  you can add extra buttons here.
-      ],
+      title: "Waasi Blog",
+      description: {
+        projectDesc:
+          "This application is a robust platform tailored for efficient management of student and employee data within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
+        techStack: "NextJS | Tailwind CSS | Aceternity UI",
+        link: "https://nextjs-mdx-blog-iota.vercel.app/projects",
+        linkName: "Al Amin",
+        frontendLink: "https://github.com/Okunola11/Nextjs-Mdx-Blog",
+        backendLink: "",
+      },
+      imgSrc: "",
     },
     {
-      //   image: require(""),
-      projectName: "Mdx Blog",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "",
-        },
-      ],
+      title: "Al Amin Schools",
+      description: {
+        projectDesc:
+          "This application is a robust platform tailored for efficient management of student and employee data within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
+        techStack: "ReactJS | NodeJS | ExpressJS | MongoDB | CSS",
+        link: "https://al-amin.onrender.com/",
+        linkName: "Al Amin",
+        frontendLink: "https://github.com/Okunola11/Al-Amin-Frontend",
+        backendLink: "https://github.com/Okunola11/Al-Amin-Backend",
+      },
+      imgSrc: "",
+    },
+    {
+      title: "Chun L. techNotes",
+      description: {
+        projectDesc:
+          "This is an app designed to streamline job management for repair shops by providing a comprehensive ticketing system. With this app, repair shop owners and employees can easily issue, track, and manage tickets for every job, ensuring efficient workflow and organization.",
+        techStack: "ReactJS | NodeJS | ExpressJS | MongoDB| CSS",
+        link: "https://ticketingnotes.onrender.com/",
+        linkName: "Chun L. Notes",
+        frontendLink: "https://github.com/Okunola11/ticketingNotes",
+        backendLink: "https://github.com/Okunola11/ticketingNotes-api",
+      },
+      imgSrc: "",
+    },
+    {
+      title: "Python Weather App",
+      description: {
+        projectDesc:
+          "A dynamic weather application built using Python Flask framework, CSS, and HTML. This innovative app seamlessly integrates with OpenWeather's API to provide real-time weather data, empowering users with accurate and up-to-date forecasts. Stay informed and prepared for any weather condition with this intuitive and responsive weather project.",
+        techStack: "Python | Html | Flask | CSS",
+        link: "https://python-weather-app-7ozf.onrender.com/",
+        linkName: "Weather App",
+        frontendLink: "https://github.com/Okunola11/Python-Weather-App",
+        backendLink: "",
+      },
+      imgSrc: "",
+    },
+    {
+      title: "Acme Rockets",
+      description: {
+        projectDesc:
+          "The Acme Rockets project was crafted as my debut exploration with Tailwind CSS. It served as a flex project, demonstrating my adeptness in crafting responsive user interfaces tailored for diverse screen sizes. This endeavor showcases my commitment to mastering modern design tools and techniques.",
+        techStack: "Html | Tailwind CSS | JavaScript",
+        link: "https://visit-space.onrender.com/",
+        linkName: "Acme Rockets",
+        frontendLink: "https://github.com/okunola11/learning_tailwind",
+        backendLink: "",
+      },
+      imgSrc: "",
     },
   ],
   display: true, // Set false to hide this section, defaults to true

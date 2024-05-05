@@ -17,3 +17,21 @@ type School = {
   grade: string;
   descBullets: string[];
 };
+
+type Projects = {
+  title: string;
+  subtitle: string;
+  projects: {
+    title: string;
+    description: {
+      projectDesc: string;
+      techStack: string;
+      link: string;
+      linkName: string;
+      frontendLink: string;
+      backendLink?: string;
+    };
+    imgSrc: string;
+  }[];
+  display?: boolean;
+};

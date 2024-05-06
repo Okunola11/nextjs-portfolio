@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="mt-4 md:mt-8 flex flex-col-reverse md:flex-row w-full gap-8 justify-center self-center custom-min-height border-b"
+      className="mt-6 md:mt-8 flex flex-col-reverse md:flex-row w-full gap-8 justify-center self-center custom-min-height border-b"
     >
       <div className="flex-1">
         <div className="flex flex-col gap-2 w-full">

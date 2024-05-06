@@ -44,7 +44,9 @@ export default function Header() {
               </Link>
               <Link href="/">
                 <span className="text-neutral-500"> &lt;</span>
-                <span className={`font-bold text-xl px-2 ${segwick.className}`}>
+                <span
+                  className={`font-bold text-xl px-2 ${segwick.className} text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600`}
+                >
                   {heroGreeting.username}
                 </span>
                 <span className="text-neutral-500">/&gt;</span>

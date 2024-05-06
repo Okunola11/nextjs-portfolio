@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="flex-1">
         <div className="flex flex-col gap-2 w-full">
           <h1 className="text-center md:text-left text-4xl md:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               {heroGreeting.title}
             </span>{" "}
             <span className="wave-emoji">{emoji("👋")}</span>

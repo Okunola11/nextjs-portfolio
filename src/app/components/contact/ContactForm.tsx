@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FormEvent } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function ContactForm() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -69,12 +70,15 @@ export default function ContactForm() {
                 placeholder="Hi, waasi..."
               />
             </div>
-            <button
-              type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
+            <div>
+              <Button
+                variant={"default"}
+                size={"default"}
+                className="bg-purple-600 dark:bg-purple-500"
+              >
+                Send message
+              </Button>
+            </div>
           </form>
         ));
   }

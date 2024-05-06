@@ -12,7 +12,7 @@ export function GradientButton({ text }: Props) {
       <HoverBorderGradient
         containerClassName="rounded-2xl"
         as="button"
-        className="dark:bg-gradient-to-r from-purple-500 to-pink-500 bg-white text-black dark:text-white flex items-center space-x-2"
+        className="bg-gradient-to-tr from-purple-500 to-cyan-500 text-black dark:text-white flex items-center space-x-2"
       >
         <span>{text}</span>
       </HoverBorderGradient>

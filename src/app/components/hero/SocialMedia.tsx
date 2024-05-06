@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { socialMediaLinks } from "@/app/portfolio";
+import { Button } from "@/components/ui/button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,49 +15,57 @@ export default function SocialMedia() {
     return null;
   }
   return (
-    <div className="text-3xl w-full flex gap-4 mb-2">
+    <div className="w-full flex gap-4 mb-2">
       {socialMediaLinks.github ? (
-        <Link
-          href={socialMediaLinks.github}
-          className="icon-button github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </Link>
+        <Button variant={"ghost"} size={"icon"}>
+          <Link
+            href={socialMediaLinks.github}
+            className="text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+        </Button>
       ) : null}
 
       {socialMediaLinks.linkedin ? (
-        <Link
-          href={socialMediaLinks.linkedin}
-          className="text-blue-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </Link>
+        <Button variant={"ghost"} size={"icon"}>
+          <Link
+            href={socialMediaLinks.linkedin}
+            className="text-blue-500 text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </Link>
+        </Button>
       ) : null}
 
       {socialMediaLinks.gmail ? (
-        <Link
-          href={`mailto:${socialMediaLinks.gmail}`}
-          className="text-red-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faEnvelope} />
-        </Link>
+        <Button variant={"ghost"} size={"icon"}>
+          <Link
+            href={`mailto:${socialMediaLinks.gmail}`}
+            className="text-red-500 text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Link>
+        </Button>
       ) : null}
 
       {socialMediaLinks.twitter ? (
-        <Link
-          href={socialMediaLinks.twitter}
-          className=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faXTwitter} />
-        </Link>
+        <Button variant={"ghost"} size={"icon"}>
+          <Link
+            href={socialMediaLinks.twitter}
+            className="text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
+          </Link>
+        </Button>
       ) : null}
     </div>
   );

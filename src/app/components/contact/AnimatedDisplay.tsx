@@ -17,7 +17,7 @@ export default function AnimatedMessage() {
       transition={{ duration: 0.5 }}
       className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
     >
-      <h1 className="text-white mb-4 8xl lg:leading-normal font-bold">
+      <h1 className="text-purple-600 dark:text-purple-500 mb-4 8xl lg:leading-normal font-bold">
         <TypeAnimation
           sequence={[msg1, 1000, msg2, 1000, msg3, 1000, msg4, 1000]}
           wrapper="span"

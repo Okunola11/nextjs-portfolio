@@ -1,5 +1,7 @@
 "use client";
 
+import "../header/header.css";
+
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -20,6 +22,18 @@ export default function Header() {
     setIsDarkMode(!isDarkMode);
   };
 
+  // Function to close the nav bar and navigate if a link is clicked on the mobile view
+  const handleLinkClick: React.MouseEventHandler<HTMLAnchorElement> = (
+    event
+  ) => {
+    event.preventDefault();
+    setIsActive(false);
+    // Extracting the URL from the href attribute of the anchor element
+    const url = event.currentTarget.href;
+    // Navigating to the URL
+    window.location.href = url;
+  };
+
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
@@ -27,6 +41,22 @@ export default function Header() {
       document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const targetElement = event.target as Element | null;
+      // this is important because event.target doesnt exist on MouseEvent
+      if (targetElement && !targetElement.closest(".nav") && isActive) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isActive]);
 
   return (
     //from-gray-900 via-blue-900 to-gray-900
@@ -178,47 +208,52 @@ export default function Header() {
         </div>
         <nav
           id="menu"
-          className={`bg-[#000e1f]/50 text-center w-full transition duration-300 ease-in-out ${
+          className={`nav open-menu bg-[#000e1f]/50 text-center w-full transition duration-300 ease-in-out ${
             isActive ? "block" : "hidden"
           }`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 p-4 gap-2">
-            <li>
+            <li className="border-b p-1">
               <Link
                 href="#skills"
                 className="text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
               >
                 Skills
               </Link>
             </li>
-            <li>
+            <li className="border-b p-1">
               <Link
                 href="#education"
                 className="text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
               >
                 Education
               </Link>
             </li>
-            <li>
+            <li className="border-b p-1">
               <Link
                 href="#projects"
                 className="text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
               >
                 Projects
               </Link>
             </li>
-            <li>
+            <li className="border-b p-1">
               <Link
                 href="#resume"
                 className="text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
               >
                 Resume
               </Link>
             </li>
-            <li>
+            <li className="border-b p-1">
               <Link
                 href="#contact"
                 className="text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
               >
                 Contact Me
               </Link>

@@ -23,7 +23,7 @@ const headerAvatar = {
 const heroGreeting = {
   username: "Okunola Abdulwasiu",
   title: "Hi, I'm Okunola",
-  subtitle: `A result driven Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript | Reactjs | Nextjs | Nodejs | Nestjs | Python | Django and some other cool libraries and frameworks`,
+  subtitle: `A result driven Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript | Reactjs | Nextjs | Redux | Nodejs | Nestjs | Python | Django and some other cool libraries and frameworks.`,
   resumeLink: "",
   displayGreeting: true, // I can use this to control the display of the greeting
 };

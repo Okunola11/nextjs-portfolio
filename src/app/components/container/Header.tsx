@@ -63,7 +63,7 @@ export default function Header() {
     <>
       <header className="bg-white dark:bg-slate-950 border-b sticky top-0 drop-shadow-xl z-20">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-16 items-center justify-between mx-auto">
             <div className="flex gap-2 items-center md:gap-4">
               <Link className="text-gray-500 dark:text-white" href="">
                 <span className="sr-only">Okunola Abdulwasiu</span>
@@ -85,10 +85,19 @@ export default function Header() {
 
             <div className="hidden md:block">
               <nav aria-label="Global">
-                <ul className="flex items-center gap-6 text-sm">
+                <ul className="flex items-center gap-6 ">
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      href="#"
+                    >
+                      Home
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
                       href="#skills"
                     >
                       Skills
@@ -97,7 +106,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
                       href="#education"
                     >
                       Education
@@ -106,7 +115,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
                       href="#projects"
                     >
                       Projects
@@ -115,7 +124,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
                       href="#resume"
                     >
                       Resume
@@ -124,7 +133,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
                       href="#contact"
                     >
                       Contact Me
@@ -135,7 +144,7 @@ export default function Header() {
             </div>
 
             <button
-              className="text-gray-800 dark:text-gray-200 text-xl"
+              className="text-rose-900 dark:text-gray-200 text-xl"
               onClick={toggleDarkMode}
             >
               {isDarkMode ? <p>Light</p> : <p>dark</p>}
@@ -186,19 +195,19 @@ export default function Header() {
               className="flex flex-col justify-center items-center md:hidden"
             >
               <span
-                className={`bg-gray-800 dark:bg-gray-200 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                   }`}
               ></span>
               <span
-                className={`bg-gray-800 dark:bg-gray-200 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
                   h-0.5 w-6 rounded-sm my-0.5 ${
                     isActive ? "opacity-0" : "opacity-100"
                   }`}
               ></span>
               <span
-                className={`bg-gray-800 dark:bg-gray-200 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
                   }`}
@@ -208,15 +217,24 @@ export default function Header() {
         </div>
         <nav
           id="menu"
-          className={`nav open-menu bg-[#000e1f]/50 text-center w-full transition duration-300 ease-in-out ${
+          className={`nav open-menu dark:bg-[#000e1f]/50 text-center w-full transition duration-300 ease-in-out ${
             isActive ? "block" : "hidden"
           }`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 p-4 gap-2">
             <li className="border-b p-1">
               <Link
+                href="#"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
+                onClick={handleLinkClick}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="border-b p-1">
+              <Link
                 href="#skills"
-                className="text-white hover:text-gray-300 py-2 px-4"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
                 Skills
@@ -225,7 +243,7 @@ export default function Header() {
             <li className="border-b p-1">
               <Link
                 href="#education"
-                className="text-white hover:text-gray-300 py-2 px-4"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
                 Education
@@ -234,7 +252,7 @@ export default function Header() {
             <li className="border-b p-1">
               <Link
                 href="#projects"
-                className="text-white hover:text-gray-300 py-2 px-4"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
                 Projects
@@ -243,7 +261,7 @@ export default function Header() {
             <li className="border-b p-1">
               <Link
                 href="#resume"
-                className="text-white hover:text-gray-300 py-2 px-4"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
                 Resume
@@ -252,7 +270,7 @@ export default function Header() {
             <li className="border-b p-1">
               <Link
                 href="#contact"
-                className="text-white hover:text-gray-300 py-2 px-4"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
                 Contact Me

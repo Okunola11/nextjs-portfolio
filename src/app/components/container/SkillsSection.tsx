@@ -8,7 +8,10 @@ export default function SkillsSection() {
     return null;
   }
   return (
-    <section className="custom-min-height mt-6 md:mt-8 border-b" id="skills">
+    <section
+      className="custom-min-height mt-6 md:mt-8 border-b scroll-mt-20"
+      id="skills"
+    >
       <div className="flex flex-col-reverse md:flex-row">
         <div className="flex-1">
           <DisplayLottie animationData={codingPerson} />

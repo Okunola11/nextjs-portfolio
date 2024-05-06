@@ -42,3 +42,14 @@ type Content = {
   description: JSX.Element;
   content: JSX.Element;
 }[];
+
+type Contact = {
+  title: string;
+  subtitle: {
+    msg1: string;
+    msg2: string;
+    msg3: string;
+    msg4: string;
+  };
+  email_address: string;
+};

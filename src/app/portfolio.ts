@@ -134,7 +134,7 @@ const projectSection: Projects = {
           "This application is a robust platform tailored for efficient management of student and employee data within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
         techStack: "NextJS | Tailwind CSS | Aceternity UI",
         link: "https://nextjs-mdx-blog-iota.vercel.app/projects",
-        linkName: "Al Amin",
+        linkName: "Waasi Blog",
         frontendLink: "https://github.com/Okunola11/Nextjs-Mdx-Blog",
         backendLink: "",
       },
@@ -201,6 +201,18 @@ const projectSection: Projects = {
   display: true, // Set false to hide this section, defaults to true
 };
 
+// Contact Section
+const contactSection: Contact = {
+  title: "Contact Me",
+  subtitle: {
+    msg1: "Contact me",
+    msg2: "Like my work?",
+    msg3: "Discuss a Project?",
+    msg4: "Connect with me on socials",
+  },
+  email_address: "abdayoade@gmail.com",
+};
+
 export {
   headerAvatar,
   heroGreeting,
@@ -208,4 +220,5 @@ export {
   skillsSection,
   educationSection,
   projectSection,
+  contactSection,
 };

@@ -77,5 +77,10 @@
 
 /* Custom CSS for each page section Height  */
 .custom-min-height {
-  min-height: calc(100vh - 64.67px);
+  min-height: calc(100vh - 88.67px); /*64.67px*/
+}
+
+/* Scroll behaviour*/
+html {
+  scroll-behavior: smooth;
 }

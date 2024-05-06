@@ -14,7 +14,7 @@ export default function SocialMedia() {
     return null;
   }
   return (
-    <div className="text-4xl w-full flex gap-4 mb-2">
+    <div className="text-3xl w-full flex gap-4 mb-2">
       {socialMediaLinks.github ? (
         <Link
           href={socialMediaLinks.github}

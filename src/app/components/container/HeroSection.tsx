@@ -32,7 +32,9 @@ export default function HeroSection() {
           <SocialMedia />
 
           <div className="flex gap-3">
-            <GradientButton text="Contact me" />
+            <Link href="#contact">
+              <GradientButton text="Contact me" />
+            </Link>
             {/* <Link href={require("./resume.pdf")}> */}
             <GradientButton text="Download cv" />
             {/* </Link> */}

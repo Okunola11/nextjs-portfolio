@@ -138,7 +138,7 @@ const projectSection: Projects = {
         frontendLink: "https://github.com/Okunola11/Nextjs-Mdx-Blog",
         backendLink: "",
       },
-      imgSrc: "",
+      imgSrc: "/images/projects/waasi-blog.png",
       imgAlt: "Waasi Blog",
     },
     {
@@ -152,7 +152,7 @@ const projectSection: Projects = {
         frontendLink: "https://github.com/Okunola11/Al-Amin-Frontend",
         backendLink: "https://github.com/Okunola11/Al-Amin-Backend",
       },
-      imgSrc: "",
+      imgSrc: "/images/projects/al-amin.png",
       imgAlt: "Al Amin",
     },
     {
@@ -166,7 +166,7 @@ const projectSection: Projects = {
         frontendLink: "https://github.com/Okunola11/ticketingNotes",
         backendLink: "https://github.com/Okunola11/ticketingNotes-api",
       },
-      imgSrc: "",
+      imgSrc: "/images/projects/tech-notes.png",
       imgAlt: "Chun L. techNotes",
     },
     {
@@ -180,7 +180,7 @@ const projectSection: Projects = {
         frontendLink: "https://github.com/Okunola11/Python-Weather-App",
         backendLink: "",
       },
-      imgSrc: "",
+      imgSrc: "/images/projects/python-weather.png",
       imgAlt: "Weather App",
     },
     {
@@ -194,7 +194,7 @@ const projectSection: Projects = {
         frontendLink: "https://github.com/okunola11/learning_tailwind",
         backendLink: "",
       },
-      imgSrc: "",
+      imgSrc: "/images/projects/acme-rockets.png",
       imgAlt: "Acme Rockets",
     },
   ],

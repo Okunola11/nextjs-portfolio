@@ -159,69 +159,31 @@ export default function Header() {
               )}
             </Button>
 
-            {/* <div className="flex items-center justify-center gap-3 md:gap-6">
-              <Link
-                className="text-gray-800 dark:text-gray-200 text-3xl md:hidden"
-                href="/"
-              >
-                <HomeRoundedIcon style={{ fontSize: 30 }} />
-              </Link>
-              <Link
-                className="text-gray-800 dark:text-gray-200 text-xl"
-                href="https://twitter.com/AbdulAyo4"
-                target="_blank"
-              >
-                <XIcon />
-              </Link>
-              <Link
-                className="text-gray-800 dark:text-gray-200 text-xl"
-                href="https://github.com/okunola11"
-                target="_blank"
-              >
-                <GitHubIcon />
-              </Link>
-              <Link
-                className="text-gray-800 dark:text-gray-200 text-xl"
-                href="https://www.linkedin.com/in/waas"
-                target="_blank"
-              >
-                <LinkedInIcon />
-              </Link>
-              <button
-                className="text-gray-800 dark:text-gray-200 text-xl"
-                onClick={toggleDarkMode}
-              >
-                {isDarkMode ? (
-                  <LightModeOutlinedIcon />
-                ) : (
-                  <DarkModeTwoToneIcon />
-                )}
-              </button>
-            </div> */}
-
-            <button
+            <Button
+              variant={"ghost"}
+              size={"icon"}
               onClick={toggleMenu}
               className="flex flex-col justify-center items-center md:hidden"
             >
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
+                className={`bg-violet-600 dark:bg-violet-300 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                   }`}
               ></span>
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
+                className={`bg-violet-600 dark:bg-violet-300 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm my-0.5 ${
                     isActive ? "opacity-0" : "opacity-100"
                   }`}
               ></span>
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
+                className={`bg-violet-600 dark:bg-violet-300 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
                   }`}
               ></span>
-            </button>
+            </Button>
           </div>
         </div>
         <nav

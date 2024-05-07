@@ -74,7 +74,7 @@ export default function ContactForm() {
               <Button
                 variant={"default"}
                 size={"default"}
-                className="bg-purple-600 dark:bg-purple-500 text-white"
+                className="bg-purple-500 text-white"
               >
                 Send message
               </Button>

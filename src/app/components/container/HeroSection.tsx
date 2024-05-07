@@ -35,19 +35,10 @@ export default function HeroSection() {
             <Link href="#contact">
               <GradientButton text="Contact me" />
             </Link>
-            {/* Add resume link */}
-            {/* {greeting.resumeLink && (
-  <a
-    href="/resume.pdf"
-    download="Resume.pdf"
-    className="download-link-button"
-  >
-    <Button text="Download my resume" />
-  </a>
-)} */}
 
-            <GradientButton text="Download cv" />
-            {/* </Link> */}
+            <Link href="/resume/okunola-resume.pdf" download="Resume.pdf">
+              <GradientButton text="Download cv" />
+            </Link>
           </div>
         </div>
       </div>

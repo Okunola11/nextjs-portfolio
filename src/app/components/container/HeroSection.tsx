@@ -1,7 +1,6 @@
 import Link from "next/link";
 import "../hero/hero.css";
 import emoji from "react-easy-emoji";
-import DisplayLottie from "../hero/DisplayLottie";
 import SocialMedia from "../hero/SocialMedia";
 import { GradientButton } from "@/app/components/hero/GradientButton";
 import { heroGreeting } from "@/app/portfolio";
@@ -35,10 +34,12 @@ export default function HeroSection() {
             <Link href="#contact">
               <GradientButton text="Contact me" />
             </Link>
-
-            <Link href="/resume/okunola-resume.pdf" download="Resume.pdf">
-              <GradientButton text="Download cv" />
-            </Link>
+            {/* Button won't be displayed if no resume download link */}
+            {heroGreeting.resumeLink && (
+              <Link href={heroGreeting.resumeLink} download="Resume.pdf">
+                <GradientButton text="Download cv" />
+              </Link>
+            )}
           </div>
         </div>
       </div>

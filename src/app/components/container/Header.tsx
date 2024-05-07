@@ -9,6 +9,9 @@ import { useEffect } from "react";
 import { headerAvatar, heroGreeting } from "../../portfolio";
 import { segwick } from "../../fonts";
 import { AvatarIcon } from "@/app/components/header/HeaderAvatar";
+import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { Button } from "@/components/ui/button";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -143,12 +146,18 @@ export default function Header() {
               </nav>
             </div>
 
-            <button
-              className="text-rose-900 dark:text-gray-200 text-xl"
+            <Button
+              variant={"ghost"}
+              size={"icon"}
+              className="dark:text-gray-200"
               onClick={toggleDarkMode}
             >
-              {isDarkMode ? <p>Light</p> : <p>dark</p>}
-            </button>
+              {isDarkMode ? (
+                <SunIcon width={20} height={20} />
+              ) : (
+                <MoonIcon width={20} height={20} />
+              )}
+            </Button>
 
             {/* <div className="flex items-center justify-center gap-3 md:gap-6">
               <Link

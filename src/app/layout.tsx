@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./fonts";
 import Header from "./components/container/Header";
+import Footer from "./components/container/Footer";
 
 export const metadata: Metadata = {
   title: "Okunola Abdulwasiu",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`dark:bg-slate-950 ${inter.className}`}>
         <Header />
         <main className="mx-5 p-2 md:mx-10 md:p-5">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -195,19 +195,19 @@ export default function Header() {
               className="flex flex-col justify-center items-center md:hidden"
             >
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                   }`}
               ></span>
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm my-0.5 ${
                     isActive ? "opacity-0" : "opacity-100"
                   }`}
               ></span>
               <span
-                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-300 ease-out 
+                className={`bg-violet-600 dark:bg-violet-500 block transition-all duration-600 ease-out 
                   h-0.5 w-6 rounded-sm ${
                     isActive ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
                   }`}
@@ -217,7 +217,7 @@ export default function Header() {
         </div>
         <nav
           id="menu"
-          className={`nav open-menu dark:bg-[#000e1f]/50 text-center w-full transition duration-300 ease-in-out ${
+          className={`nav open-menu dark:bg-[#000e1f]/50 text-center w-full transition duration-500 ease-in-out ${
             isActive ? "block" : "hidden"
           }`}
         >

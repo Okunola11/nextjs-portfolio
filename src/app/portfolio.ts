@@ -131,7 +131,7 @@ const projectSection: Projects = {
       title: "Waasi Blog",
       description: {
         projectDesc:
-          "This application is a robust platform tailored for efficient management of student and employee data within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
+          "Waasi Blog is my personal blog project. A dynamic Next.js blog project powered by Markdown files. Content is authored in MDX format, seamlessly synced from a separate GitHub repository. Readers get to explore a modern blogging experience, with fast rendering and easy content management for me.",
         techStack: "NextJS | Tailwind CSS | Aceternity UI",
         link: "https://nextjs-mdx-blog-iota.vercel.app/projects",
         linkName: "Waasi Blog",
@@ -213,6 +213,10 @@ const contactSection: Contact = {
   email_address: "abdayoade@gmail.com",
 };
 
+const footerSection = {
+  display: true, // Set false to hide this section, defaults to true
+};
+
 export {
   headerAvatar,
   heroGreeting,
@@ -221,4 +225,5 @@ export {
   educationSection,
   projectSection,
   contactSection,
+  footerSection,
 };

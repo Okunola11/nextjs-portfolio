@@ -18,7 +18,7 @@ export default function ProjectContent() {
             <span className="font-bold">Live at: </span>
 
             <Link
-              className="no-underline text-black bg-purple-300 hover:bg-sky-500 border border-solid rounded p-1 shadow-xl"
+              className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
               href={project.description.link}
               target="_blank"
             >
@@ -28,7 +28,7 @@ export default function ProjectContent() {
           <p className="text-xs mt-5">
             <span className="font-bold">Github: </span>
             <Link
-              className="no-underline text-black bg-purple-300 hover:bg-sky-500 border border-solid rounded p-1 shadow-xl"
+              className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
               href={project.description.frontendLink}
               target="_blank"
             >
@@ -39,7 +39,7 @@ export default function ProjectContent() {
             <p className="text-xs mt-5">
               <span className="font-bold">Github: </span>
               <Link
-                className="no-underline text-black bg-purple-300 hover:bg-sky-500 border border-solid rounded p-1 shadow-xl"
+                className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
                 href={project.description.backendLink}
                 target="_blank"
               >

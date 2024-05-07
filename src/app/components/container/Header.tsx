@@ -11,7 +11,6 @@ import { segwick } from "../../fonts";
 import { AvatarIcon } from "@/app/components/header/HeaderAvatar";
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -91,7 +90,7 @@ export default function Header() {
                 <ul className="flex items-center gap-6 ">
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#"
                     >
                       Home
@@ -100,7 +99,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#skills"
                     >
                       Skills
@@ -109,7 +108,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#education"
                     >
                       Education
@@ -118,7 +117,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#projects"
                     >
                       Projects
@@ -127,7 +126,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#resume"
                     >
                       Resume
@@ -136,7 +135,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-rose-900 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
                       href="#contact"
                     >
                       Contact Me

@@ -1,16 +1,25 @@
 /* This file contains all data for the Portfolio Project */
 
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
-  faHtml5,
-  faCss3Alt,
-  faSass,
-  faJs,
-  faReact,
-  faNode,
-  faNpm,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+  SiNestjs,
+  SiRedux,
+  SiDjango,
+  SiPostgresql,
+  SiJavascript,
+  SiMongodb,
+} from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import {
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaNpm,
+  FaPython,
+} from "react-icons/fa";
+import { Contact, Projects, School, Skills } from "../../types";
 
 // Header Avatar
 const headerAvatar = {
@@ -60,40 +69,65 @@ const skillsSection: Skills = {
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: faHtml5,
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: faCss3Alt,
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: faSass,
-    },
-    {
       skillName: "JavaScript",
-      fontAwesomeClassname: faJs,
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: faReact,
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: faNode,
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: faNpm,
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: faDatabase,
+      iconName: SiJavascript,
     },
     {
       skillName: "python",
-      fontAwesomeClassname: faPython,
+      iconName: FaPython,
+    },
+    {
+      skillName: "nextjs",
+      iconName: RiNextjsFill,
+    },
+    {
+      skillName: "nestjs",
+      iconName: SiNestjs,
+    },
+    {
+      skillName: "redux-toolkit",
+      iconName: SiRedux,
+    },
+    {
+      skillName: "django",
+      iconName: SiDjango,
+    },
+    {
+      skillName: "reactjs",
+      iconName: FaReact,
+    },
+    {
+      skillName: "nodejs",
+      iconName: FaNodeJs,
+    },
+    {
+      skillName: "git",
+      iconName: FaGitAlt,
+    },
+    {
+      skillName: "html-5",
+      iconName: FaHtml5,
+    },
+    {
+      skillName: "css3",
+      iconName: FaCss3Alt,
+    },
+    {
+      skillName: "sass",
+      iconName: FaSass,
+    },
+
+    {
+      skillName: "npm",
+      iconName: FaNpm,
+    },
+    {
+      skillName: "postgres-sql",
+      iconName: SiPostgresql,
+    },
+    {
+      skillName: "mongodb",
+      iconName: SiMongodb,
     },
   ],
   display: true, // Set false to hide this section, defaults to true

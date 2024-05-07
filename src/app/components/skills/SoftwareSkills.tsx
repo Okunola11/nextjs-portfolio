@@ -1,6 +1,4 @@
 import { skillsSection } from "../../portfolio";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "@fortawesome/fontawesome-svg-core/styles.css"; // this is required for NextJS
 
 export default function SoftwareSkill() {
   return (
@@ -12,11 +10,9 @@ export default function SoftwareSkill() {
               key={i}
               className="inline mr-5 mb-5 text-4xl dark:text-[#868e96] hover:text-blue-400"
             >
-              <FontAwesomeIcon
-                fontSize={50}
-                icon={skills.fontAwesomeClassname}
-              />
+              {skills.iconName && <skills.iconName fontSize={50} />}
               <p className="text-[10px] text-center">{skills.skillName}</p>
+              <span className="sr-only">{skills.skillName}</span>
             </li>
           );
         })}

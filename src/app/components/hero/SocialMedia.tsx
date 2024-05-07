@@ -2,13 +2,8 @@ import Link from "next/link";
 import { socialMediaLinks } from "@/app/portfolio";
 import { Button } from "@/components/ui/button";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faXTwitter,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 
 export default function SocialMedia() {
   if (!socialMediaLinks.display) {
@@ -24,7 +19,7 @@ export default function SocialMedia() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FaGithub />
           </Link>
         </Button>
       ) : null}
@@ -37,7 +32,7 @@ export default function SocialMedia() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FaLinkedin />
           </Link>
         </Button>
       ) : null}
@@ -50,7 +45,7 @@ export default function SocialMedia() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <SiGmail />
           </Link>
         </Button>
       ) : null}
@@ -63,7 +58,7 @@ export default function SocialMedia() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faXTwitter} />
+            <FaXTwitter />
           </Link>
         </Button>
       ) : null}

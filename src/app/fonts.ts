@@ -1,11 +1,4 @@
-import {
-  Inter,
-  Sacramento,
-  Sedgwick_Ave_Display,
-  Creepster,
-} from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Sacramento, Sedgwick_Ave_Display, Montserrat } from "next/font/google";
 
 const sacramento = Sacramento({
   subsets: ["latin-ext"],
@@ -20,12 +13,6 @@ const segwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
 });
 
-const creepster = Creepster({
-  weight: ["400"],
-  style: ["normal"],
-  preload: true,
-  fallback: ["inter"],
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({ subsets: ["cyrillic-ext"] });
 
-export { inter, sacramento, segwick, creepster };
+export { sacramento, segwick, montserrat };

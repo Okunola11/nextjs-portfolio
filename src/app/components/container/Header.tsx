@@ -90,7 +90,7 @@ export default function Header() {
                 <ul className="flex items-center gap-6 ">
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#"
                     >
                       Home
@@ -99,7 +99,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#skills"
                     >
                       Skills
@@ -108,7 +108,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#education"
                     >
                       Education
@@ -117,7 +117,7 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#projects"
                     >
                       Projects
@@ -126,16 +126,16 @@ export default function Header() {
 
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
-                      href="#resume"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
+                      href="#otherprojects"
                     >
-                      Resume
+                      Other Projects
                     </Link>
                   </li>
 
                   <li>
                     <Link
-                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-lg z-5"
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#contact"
                     >
                       Contact Me

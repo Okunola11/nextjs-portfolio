@@ -235,6 +235,49 @@ const projectSection: Projects = {
   display: true, // Set false to hide this section, defaults to true
 };
 
+// Other Projects Section
+const otherProjects = {
+  title: "Other Projects",
+  subtitle: "SOME PROJECTS THAT ARE NOT HOSTED YET BUT ARE WORTH CHECKING OUT",
+  projects: [
+    {
+      title: "Django E-commerce API",
+      description: {
+        projectDesc:
+          "This project was created to explore the intricacies of the Django REST Framework. It features an API designed for an e-commerce product company.Notably, the project integrates Algolia's powerful search engine API, enhancing search capabilities.",
+        techStack:
+          "Python | Django Rest Framework | TypeScript | Algolia | Html",
+      },
+      github: "https://github.com/Okunola11/Learning-Django-Rest-Framework",
+      imgSrc: "/images/projects/waasi-blog.png",
+      imgAlt: "Django E-commerce API",
+    },
+    {
+      title: "Django Blog Project",
+      description: {
+        projectDesc:
+          "A project crafted entirely with the Django framework. It serves as an exploration of Django's robust capabilities, showcasing its prowess as a full-stack framework. Content is rendered dynamically using HTML templates, highlighting Django's versatility and power.",
+        techStack: "Python | Django | Html",
+      },
+      github: "https://github.com/Okunola11/Django_Blog_Project",
+      imgSrc: "/images/projects/waasi-blog.png",
+      imgAlt: "Django Blog Project",
+    },
+    {
+      title: "NextJS Search App",
+      description: {
+        projectDesc:
+          "This is a project I used to practice basics and nuances of Nextjs.It is a search app that implements the wikipedia api",
+        techStack: "NextJS | TypeScript | Algolia",
+      },
+      github: "https://github.com/Okunola11/Next.js-Wiki-App",
+      imgSrc: "/images/projects/waasi-blog.png",
+      imgAlt: "NexJS Search App",
+    },
+  ],
+  display: true, // Set false to hide this section, defaults to true
+};
+
 // Contact Section
 const contactSection: Contact = {
   title: "Contact Me",
@@ -260,4 +303,5 @@ export {
   projectSection,
   contactSection,
   footerSection,
+  otherProjects,
 };

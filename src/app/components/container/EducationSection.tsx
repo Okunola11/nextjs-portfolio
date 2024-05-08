@@ -5,7 +5,7 @@ export default function EducationSection() {
   if (educationSection.display) {
     return (
       <section
-        className="custom-min-height mt-6 md:mt-8 border-b scroll-mt-20"
+        className="custom-min-height my-3 md:my-4 py-2 md:py-4 border-b scroll-mt-20"
         id="education"
       >
         <h1 className="text-4xl md:text-5xl mb-6">Education</h1>

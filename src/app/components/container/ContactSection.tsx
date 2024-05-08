@@ -6,7 +6,7 @@ import SocialMedia from "../hero/SocialMedia";
 export default function ContactSection() {
   return (
     <section
-      className="custom-min-height mt-6 md:mt-8 scroll-mt-20"
+      className="custom-min-height my-3 md:my-4 py-2 md:py-4 scroll-mt-20"
       id="contact"
     >
       <h1 className="text-4xl md:text-5xl mb-6">{contactSection.title}</h1>

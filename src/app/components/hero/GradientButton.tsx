@@ -10,7 +10,7 @@ export function GradientButton({ text }: Props) {
   return (
     <div>
       <HoverBorderGradient
-        containerClassName="rounded-2xl"
+        containerClassName="rounded-2xl hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
         as="button"
         className="bg-gradient-to-tr from-purple-500 to-cyan-500 text-white flex items-center space-x-2"
       >

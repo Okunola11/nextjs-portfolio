@@ -238,7 +238,7 @@ const projectSection: Projects = {
 // Other Projects Section
 const otherProjects = {
   title: "Other Projects",
-  subtitle: "SOME PROJECTS THAT ARE NOT HOSTED YET BUT ARE WORTH CHECKING OUT",
+  subtitle: "SOME PROJECTS THAT ARE NOT HOSTED (YET) BUT ARE WORTH CHECKING OUT",
   projects: [
     {
       title: "Django E-commerce API",
@@ -249,7 +249,7 @@ const otherProjects = {
           "Python | Django Rest Framework | TypeScript | Algolia | Html",
       },
       github: "https://github.com/Okunola11/Learning-Django-Rest-Framework",
-      imgSrc: "/images/projects/waasi-blog.png",
+      imgSrc: "/images/others/drf-api.png",
       imgAlt: "Django E-commerce API",
     },
     {
@@ -260,18 +260,18 @@ const otherProjects = {
         techStack: "Python | Django | Html",
       },
       github: "https://github.com/Okunola11/Django_Blog_Project",
-      imgSrc: "/images/projects/waasi-blog.png",
+      imgSrc: "/images/others/django-blog.png",
       imgAlt: "Django Blog Project",
     },
     {
-      title: "NextJS Search App",
+      title: "NextJS WikiSearch",
       description: {
         projectDesc:
           "This is a project I used to practice basics and nuances of Nextjs.It is a search app that implements the wikipedia api",
         techStack: "NextJS | TypeScript | Algolia",
       },
       github: "https://github.com/Okunola11/Next.js-Wiki-App",
-      imgSrc: "/images/projects/waasi-blog.png",
+      imgSrc: "/images/others/wikisearch.png",
       imgAlt: "NexJS Search App",
     },
   ],

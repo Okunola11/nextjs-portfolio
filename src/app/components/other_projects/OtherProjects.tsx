@@ -10,7 +10,7 @@ export default function OtherProjects() {
     return (
       <li
         key={idx}
-        className="flex flex-col gap-4 text-center h-full min-h-[410px] p-4 rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 text-white dark:text-white shadow-2xl w-[350px] max-w-full md:w-[450px] font-mono"
+        className="flex flex-col gap-4 text-center h-full min-h-[440px] md:min-h-[410px] p-4 rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 text-white dark:text-white shadow-2xl w-[350px] max-w-full md:w-[450px] font-mono"
         style={{
           background:
             "linear-gradient(180deg, var(--slate-800), var(--slate-900)",

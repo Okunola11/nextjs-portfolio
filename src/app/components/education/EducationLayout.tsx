@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./education.css";
+import { School } from "../../../../types";
 
 type Descprops = {
   descBullets: string[];

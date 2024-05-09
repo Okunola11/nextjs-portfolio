@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projectSection } from "@/app/portfolio";
+import { Content } from "../../../../types";
 
 export default function ProjectContent() {
   const projectData = projectSection.projects;

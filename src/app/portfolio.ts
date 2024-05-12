@@ -167,7 +167,7 @@ const projectSection: Projects = {
         projectDesc:
           "Waasi Blog is my personal blog project. A dynamic Next.js blog project powered by Markdown files. Content is authored in MDX format, seamlessly synced from a separate GitHub repository. Readers get to explore a modern blogging experience, with fast rendering and easy content management for me.",
         techStack: "NextJS | Tailwind CSS | Aceternity UI",
-        link: "https://nextjs-mdx-blog-iota.vercel.app/projects",
+        link: "https://nextjs-mdx-blog-iota.vercel.app/",
         linkName: "Waasi Blog",
         frontendLink: "https://github.com/Okunola11/Nextjs-Mdx-Blog",
         backendLink: "",

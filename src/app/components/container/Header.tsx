@@ -230,14 +230,14 @@ export default function Header() {
             </li>
             <li className="border-b p-1">
               <Link
-                href="#resume"
+                href="#otherprojects"
                 className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"
                 onClick={handleLinkClick}
               >
-                Resume
+                Other Projects
               </Link>
             </li>
-            <li className="border-b p-1">
+            <li>
               <Link
                 href="#contact"
                 className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4"

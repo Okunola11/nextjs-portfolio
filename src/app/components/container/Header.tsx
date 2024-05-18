@@ -136,6 +136,16 @@ export default function Header() {
                   <li>
                     <Link
                       className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
+                      href="https://nextjs-mdx-blog-iota.vercel.app/" 
+                      target="_blank"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75 text-sm z-5"
                       href="#contact"
                     >
                       Contact Me
@@ -235,6 +245,16 @@ export default function Header() {
                 onClick={handleLinkClick}
               >
                 Other Projects
+              </Link>
+            </li>
+            <li className="border-b p-1">
+              <Link
+                href="https://nextjs-mdx-blog-iota.vercel.app/"
+                className="text-purple-500 dark:text-white hover:text-gray-300 py-2 px-4" 
+                target="_blank"
+                onClick={handleLinkClick}
+              >
+                Blog
               </Link>
             </li>
             <li>

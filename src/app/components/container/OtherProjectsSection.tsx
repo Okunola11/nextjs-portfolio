@@ -4,9 +4,12 @@ import { otherProjects } from "@/app/portfolio";
 export default function OtherProjectSection() {
   if (otherProjects.display) {
     return (
-      <section className="h-screen my-3 md:my-4 py-2 md:py-4 border-b scroll-mt-20" id="otherprojects">
-        <h1 className="text-4xl md:text-5xl mb-6">{otherProjects.title}</h1>
-        <p className="dark:text-[#868e96] mb-4">{otherProjects.subtitle}</p>
+      <section
+        className="my-3 h-screen scroll-mt-20 border-b py-2 md:my-4 md:py-4"
+        id="otherprojects"
+      >
+        <h1 className="mb-6 text-4xl md:text-5xl">{otherProjects.title}</h1>
+        <p className="mb-4 dark:text-[#868e96]">{otherProjects.subtitle}</p>
         <AnimatedProjects />
       </section>
     );

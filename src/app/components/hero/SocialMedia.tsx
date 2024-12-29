@@ -10,7 +10,7 @@ export default function SocialMedia() {
     return null;
   }
   return (
-    <div className="w-full flex gap-4 mb-2">
+    <div className="mb-2 flex w-full gap-4">
       {socialMediaLinks.github ? (
         <Button variant={"ghost"} size={"icon"}>
           <Link
@@ -28,7 +28,7 @@ export default function SocialMedia() {
         <Button variant={"ghost"} size={"icon"}>
           <Link
             href={socialMediaLinks.linkedin}
-            className="text-blue-500 text-3xl"
+            className="text-3xl text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,7 +41,7 @@ export default function SocialMedia() {
         <Button variant={"ghost"} size={"icon"}>
           <Link
             href={`mailto:${socialMediaLinks.gmail}`}
-            className="text-red-500 text-3xl"
+            className="text-3xl text-red-500"
             target="_blank"
             rel="noopener noreferrer"
           >

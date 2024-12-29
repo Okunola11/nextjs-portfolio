@@ -6,10 +6,10 @@ import SocialMedia from "../hero/SocialMedia";
 export default function ContactSection() {
   return (
     <section
-      className="custom-min-height my-3 md:my-4 py-2 md:py-4 scroll-mt-20"
+      className="custom-min-height my-3 scroll-mt-20 py-2 md:my-4 md:py-4"
       id="contact"
     >
-      <h1 className="text-4xl md:text-5xl mb-6">{contactSection.title}</h1>
+      <h1 className="mb-6 text-4xl md:text-5xl">{contactSection.title}</h1>
       <div className="grid md:grid-cols-2">
         <div className="mb-10 md:mb-0">
           <AnimatedMessage />

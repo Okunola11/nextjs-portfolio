@@ -10,13 +10,13 @@ export default function OtherProjects() {
     return (
       <li
         key={idx}
-        className="flex flex-col gap-4 text-center h-full min-h-[440px] md:min-h-[410px] p-4 rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 text-white dark:text-white shadow-2xl w-[350px] max-w-full md:w-[450px] font-mono"
+        className="flex h-full min-h-[440px] w-[350px] max-w-full flex-shrink-0 flex-col gap-4 rounded-2xl border border-b-0 border-slate-700 p-4 text-center font-mono text-white shadow-2xl dark:text-white md:min-h-[410px] md:w-[450px]"
         style={{
           background:
             "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
         }}
       >
-        <div className="w-28 h-28 overflow-hidden self-center">
+        <div className="h-28 w-28 self-center overflow-hidden">
           <Image
             className=""
             src={project.imgSrc}

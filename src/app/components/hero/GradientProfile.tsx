@@ -7,13 +7,13 @@ export function ProfileImage() {
   return (
     <div>
       <BackgroundGradient
-        className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900"
+        className="max-w-sm rounded-[22px] bg-white p-4 dark:bg-zinc-900 sm:p-10"
         containerClassName="max-w-sm w-[300px] md:w-[500px]"
       >
         <MyImage />
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+        <button className="mt-4 flex items-center space-x-1 rounded-full bg-black py-1 pl-4 pr-1 text-xs font-bold text-white dark:bg-zinc-800">
           <span>Waasi</span>
-          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
+          <span className="rounded-full bg-zinc-700 px-2 py-0 text-[0.6rem] text-white">
             💻
           </span>
         </button>

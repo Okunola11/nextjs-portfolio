@@ -11,25 +11,26 @@ export default function ProjectContent() {
       description: (
         <>
           <p>{project.description.projectDesc}</p>
-          <p className="text-xs mt-5">
+
+          <p className="mt-5 text-xs">
             <span className="font-bold">Tech Stack: </span>
             {project.description.techStack}
           </p>
-          <p className="text-xs mt-5">
+          <p className="mt-5 text-xs">
             <span className="font-bold">Live at: </span>
 
             <Link
-              className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
+              className="rounded border border-solid bg-purple-200 p-1 text-black no-underline shadow-xl hover:bg-purple-300"
               href={project.description.link}
               target="_blank"
             >
               {project.description.linkName}
             </Link>
           </p>
-          <p className="text-xs mt-5">
+          <p className="mt-5 text-xs">
             <span className="font-bold">Github: </span>
             <Link
-              className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
+              className="rounded border border-solid bg-purple-200 p-1 text-black no-underline shadow-xl hover:bg-purple-300"
               href={project.description.frontendLink}
               target="_blank"
             >
@@ -37,10 +38,10 @@ export default function ProjectContent() {
             </Link>
           </p>
           {project.description.backendLink && (
-            <p className="text-xs mt-5">
+            <p className="mt-5 text-xs">
               <span className="font-bold">Github: </span>
               <Link
-                className="no-underline text-black bg-purple-200 hover:bg-purple-300 border border-solid rounded p-1 shadow-xl"
+                className="rounded border border-solid bg-purple-200 p-1 text-black no-underline shadow-xl hover:bg-purple-300"
                 href={project.description.backendLink}
                 target="_blank"
               >
@@ -51,7 +52,7 @@ export default function ProjectContent() {
         </>
       ),
       content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
+        <div className="flex h-full w-full items-center justify-center text-white">
           <Image
             className="h-full w-full object-contain"
             src={project.imgSrc}

@@ -11,9 +11,7 @@ export default function SoftwareSkill() {
               key={i}
               className="mb-5 mr-5 inline text-4xl hover:text-blue-400 dark:text-[#868e96]"
             >
-              <div className="rotate-icon">
-                {skills.iconName && <skills.iconName fontSize={50} />}
-              </div>
+              <div>{skills.iconName && <skills.iconName fontSize={50} />}</div>
               <p className="text-center text-[10px]">{skills.skillName}</p>
               <span className="sr-only">{skills.skillName}</span>
             </li>

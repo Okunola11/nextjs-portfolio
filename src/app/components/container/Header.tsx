@@ -118,18 +118,18 @@ export default function Header() {
                   <li>
                     <Link
                       className="z-5 text-sm text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75"
-                      href="#projects"
+                      href="#experiences"
                     >
-                      Projects
+                      Experience
                     </Link>
                   </li>
 
                   <li>
                     <Link
                       className="z-5 text-sm text-pink-950 transition hover:text-gray-500/75 dark:text-purple-300 dark:hover:text-white/75"
-                      href="#otherprojects"
+                      href="#projects"
                     >
-                      Other Projects
+                      Projects
                     </Link>
                   </li>
 
@@ -228,20 +228,20 @@ export default function Header() {
             </li>
             <li className="border-b p-1">
               <Link
+                href="#experiences"
+                className="px-4 py-2 text-purple-500 hover:text-gray-300 dark:text-white"
+                onClick={handleLinkClick}
+              >
+                Experience
+              </Link>
+            </li>
+            <li className="border-b p-1">
+              <Link
                 href="#projects"
                 className="px-4 py-2 text-purple-500 hover:text-gray-300 dark:text-white"
                 onClick={handleLinkClick}
               >
                 Projects
-              </Link>
-            </li>
-            <li className="border-b p-1">
-              <Link
-                href="#otherprojects"
-                className="px-4 py-2 text-purple-500 hover:text-gray-300 dark:text-white"
-                onClick={handleLinkClick}
-              >
-                Other Projects
               </Link>
             </li>
             <li className="border-b p-1">

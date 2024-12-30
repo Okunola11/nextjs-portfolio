@@ -1,4 +1,4 @@
-/* This file contains all data for the Portfolio Project */
+/* This file contains all date for the Portfolio Project */
 
 import {
   SiNestjs,
@@ -6,9 +6,11 @@ import {
   SiDjango,
   SiPostgresql,
   SiJavascript,
-  SiMongodb,
+  SiFastapi,
+  SiRedis,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { TbSql } from "react-icons/tb";
 import {
   FaGitAlt,
   FaHtml5,
@@ -16,10 +18,16 @@ import {
   FaSass,
   FaReact,
   FaNodeJs,
-  FaNpm,
   FaPython,
+  FaDocker,
 } from "react-icons/fa";
-import { Contact, Projects, School, Skills } from "../../types";
+import {
+  Contact,
+  Projects,
+  School,
+  Skills,
+  WorkExperiences,
+} from "../../types";
 
 // Header Avatar
 const headerAvatar = {
@@ -32,7 +40,7 @@ const headerAvatar = {
 const heroGreeting = {
   username: "Okunola Abdulwasiu",
   title: "Hi, I'm Okunola",
-  subtitle: `A detail-oriented Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript | Reactjs | Nextjs | Nestjs | Django and some other cool libraries and frameworks.`,
+  subtitle: `A software engineer passionate about solving problems with innovative solutions. 🚀 My journey has shifted from being tool-centric to embracing a wide range of technologies. I’m excited to explore diverse methodologies and continuously expand my skills. Welcome to my portfolio, where you can see my projects and insights!`,
   resumeLink: "/resume/okunola-resume.pdf",
   displayGreeting: true, // I can use this to control the display of the greeting
 };
@@ -55,14 +63,13 @@ const socialMediaLinks = {
 
 const skillsSection: Skills = {
   title: "What I do",
-  subTitle:
-    "CURIOUS FULL STACK DEVELOPER EAGER TO DIVE DEEP INTO VARIOUS TECH STACKS",
+  subTitle: "CURIOUS JUNIOR EAGER TO DIVE DEEP INTO VARIOUS TECH STACKS",
   skills: [
-    "⚡ Develop engaging front-end experiences and user interfaces for web applications",
-
     "⚡ Develop resilient and scalable backend APIs to seamlessly communicate with the frontend",
 
-    "⚡ Seamless Integration of third party services such as Algolia Search / PostgreSQL / Paystack",
+    "⚡ Develop engaging front-end experiences and user interfaces for web applications",
+
+    "⚡ Seamless Integration of third party services such as Stripe / Paystack / Agora / Algolia Search and more.",
   ],
 
   /* These icons are imported at the top. Import any addition you need. Check: https://fontawesome.com/icons?d=gallery */
@@ -118,16 +125,24 @@ const skillsSection: Skills = {
     },
 
     {
-      skillName: "npm",
-      iconName: FaNpm,
+      skillName: "sql",
+      iconName: TbSql,
     },
     {
       skillName: "postgres-sql",
       iconName: SiPostgresql,
     },
     {
-      skillName: "mongodb",
-      iconName: SiMongodb,
+      skillName: "docker",
+      iconName: FaDocker,
+    },
+    {
+      skillName: "redis",
+      iconName: SiRedis,
+    },
+    {
+      skillName: "fastapi",
+      iconName: SiFastapi,
     },
   ],
   display: true, // Set false to hide this section, defaults to true
@@ -155,12 +170,67 @@ const educationSection = {
   ],
 };
 
+// Work experience section
+const workExperiences: WorkExperiences = {
+  display: true, // Set to false to hide
+  experience: [
+    {
+      role: "Backend Engineer",
+      jobType: "remote",
+      company: "SpiCodex",
+      companyLogo: "",
+      date: "Nov 2024 - Present",
+      desc: "Overseeing core product design, planning and implementation.",
+      // descBullets: [
+      //   "Designed scalable database architectures for complex applications.",
+      //   "Architected microservices systems to enhance modularity and integration.",
+      //   "Collaborated with design teams to map features to functional endpoints.",
+      //   "Integrated APIs with frontend teams to improve user experience.",
+      // ],
+      descBullets: [
+        "Developing microservices APIs for users, admins, and merchants using FastAPI and NestJS.",
+        "Building e-commerce features, including product management and booking systems.",
+        "Integrating payment gateways like Stripe and Flutterwave for seamless transactions.",
+        "Implementing live streaming capabilities with Agora for enhanced user engagement.",
+        "Creating dynamic event and location features to enrich the user experience.",
+      ],
+    },
+    {
+      role: "Engineer Intern",
+      jobType: "remote",
+      company: "Hng Tech",
+      companyLogo: "",
+      date: "July 2024 - August 2024",
+      desc: "Fullstack developer. I worked with cross platform teams to develop core products for Hng.",
+      descBullets: [
+        "Created engaging and visually appealing UI for HNG's boilerplate project.",
+        "Developed endpoints for efficient product and blog management.",
+        "Implemented background removal features for images and videos in HNG AIVideo.",
+      ],
+    },
+  ],
+};
+
 // Projects Section
 
 const projectSection: Projects = {
   title: "Projects",
-  subtitle: "SOME PROJECTS I HAVE WORKED ON WITH VARIOUS TECH STACKS",
+  subtitle: "Hobby Projects Showcasing My Growth, From Recent to Past",
   projects: [
+    {
+      title: "DBSage - AI Assistant",
+      description: {
+        projectDesc:
+          "DBSage is an intelligent assistant that simplifies working with SQL databases. By connecting your database, you can ask natural language questions, and DBSage will automatically generate and run the SQL query for you. It returns both the query and the results, saving you time and effort. Whether you're a novice or expert, DBSage streamlines data interaction, making it easier, faster, and more efficient to get the insights you need without writing a single line of SQL.",
+        techStack: "FASTAPI | NextJS | Tailwind CSS",
+        link: "https://dbsage-frontend.vercel.app/",
+        linkName: "DBSage",
+        frontendLink: "https://github.com/Okunola11/dbsage_frontend",
+        backendLink: "https://github.com/Okunola11/DBSage",
+      },
+      imgSrc: "/images/projects/dbsage.png",
+      imgAlt: "Waasi Blog",
+    },
     {
       title: "Waasi Blog",
       description: {
@@ -179,7 +249,7 @@ const projectSection: Projects = {
       title: "Al Amin Schools",
       description: {
         projectDesc:
-          "This application is a robust platform tailored for efficient management of student and employee data within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
+          "This application is a robust platform tailored for efficient management of student and employee date within educational institutions. It offers user-friendly interfaces for public information dissemination and secure portals for students and staff. Additionally, it facilitates grade calculation and academic assessment based on teacher input, ensuring a comprehensive experience.",
         techStack: "ReactJS | NodeJS | ExpressJS | MongoDB | CSS",
         link: "https://al-amin.onrender.com/",
         linkName: "Al Amin",
@@ -207,7 +277,7 @@ const projectSection: Projects = {
       title: "Python Weather App",
       description: {
         projectDesc:
-          "A dynamic weather application built using Python Flask framework, CSS, and HTML. This innovative app seamlessly integrates with OpenWeather's API to provide real-time weather data, empowering users with accurate and up-to-date forecasts. Stay informed and prepared for any weather condition with this intuitive and responsive weather project.",
+          "A dynamic weather application built using Python Flask framework, CSS, and HTML. This innovative app seamlessly integrates with OpenWeather's API to provide real-time weather date, empowering users with accurate and up-to-date forecasts. Stay informed and prepared for any weather condition with this intuitive and responsive weather project.",
         techStack: "Python | Html | Flask | CSS",
         link: "https://python-weather-app-7ozf.onrender.com/",
         linkName: "Weather App",
@@ -238,7 +308,8 @@ const projectSection: Projects = {
 // Other Projects Section
 const otherProjects = {
   title: "Other Projects",
-  subtitle: "SOME PROJECTS THAT ARE NOT HOSTED (YET) BUT ARE WORTH CHECKING OUT",
+  subtitle:
+    "SOME PROJECTS THAT ARE NOT HOSTED (YET) BUT ARE WORTH CHECKING OUT",
   projects: [
     {
       title: "Django E-commerce API",
@@ -275,7 +346,7 @@ const otherProjects = {
       imgAlt: "NexJS Search App",
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Contact Section
@@ -304,4 +375,5 @@ export {
   contactSection,
   footerSection,
   otherProjects,
+  workExperiences,
 };

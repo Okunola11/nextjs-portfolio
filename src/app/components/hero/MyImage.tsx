@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MyImage() {
   return (
     <div className="grid place-content-center">
-      <div className="grid place-content-center ">
+      <div className="grid place-content-center">
         <Image
           className="rounded-xl"
           src="/images/okunola.png"

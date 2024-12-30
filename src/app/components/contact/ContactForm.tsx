@@ -16,7 +16,7 @@ export default function ContactForm() {
   {
     emailSubmitted
       ? (content = (
-          <p className="text-green-500 text-sm mt-2">
+          <p className="mt-2 text-sm text-green-500">
             Email sent successfully!
           </p>
         ))
@@ -25,7 +25,7 @@ export default function ContactForm() {
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="dark:text-white block mb-2 text-sm font-medium"
+                className="mb-2 block text-sm font-medium dark:text-white"
               >
                 Your email
               </label>
@@ -34,14 +34,14 @@ export default function ContactForm() {
                 type="email"
                 id="email"
                 required
-                className="bg-[#f5f5f5] border border-[#33353F] placeholder-zinc-400 text-sm rounded-lg block w-full p-3 dark:text-gray-900"
+                className="block w-full rounded-lg border border-[#33353F] bg-[#f5f5f5] p-3 text-sm placeholder-zinc-400 dark:text-gray-900"
                 placeholder="john@gmail.com"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="subject"
-                className="dark:text-white block text-sm mb-2 font-medium"
+                className="mb-2 block text-sm font-medium dark:text-white"
               >
                 Subject
               </label>
@@ -50,14 +50,14 @@ export default function ContactForm() {
                 type="text"
                 id="subject"
                 required
-                className="bg-[#f5f5f5] border border-[#33353F] placeholder-zinc-400 text-sm rounded-lg block w-full p-3 dark:text-gray-900"
+                className="block w-full rounded-lg border border-[#33353F] bg-[#f5f5f5] p-3 text-sm placeholder-zinc-400 dark:text-gray-900"
                 placeholder="Hey there"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="dark:text-white block text-sm mb-2 font-medium"
+                className="mb-2 block text-sm font-medium dark:text-white"
               >
                 Message
               </label>
@@ -66,7 +66,7 @@ export default function ContactForm() {
                 id="message"
                 cols={30}
                 rows={10}
-                className="bg-[#f5f5f5] border border-[#33353F] placeholder-zinc-400 text-sm rounded-lg block w-full p-3 dark:text-gray-900"
+                className="block w-full rounded-lg border border-[#33353F] bg-[#f5f5f5] p-3 text-sm placeholder-zinc-400 dark:text-gray-900"
                 placeholder="Hi, waasi..."
               />
             </div>

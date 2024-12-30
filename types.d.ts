@@ -55,3 +55,18 @@ type Contact = {
   };
   email_address: string;
 };
+
+type Experience = {
+  role: string;
+  jobType: "remote" | "onsite";
+  company: string;
+  companyLogo: string;
+  date: string;
+  desc: string;
+  descBullets: string[];
+};
+
+type WorkExperiences = {
+  display: boolean;
+  experience: Experience[];
+};

@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = date.getFullYear();
   if (footerSection.display) {
     return (
-      <footer className="border-t p-4 grid place-content-center bg-gradient-to-tr from-purple-500 to-cyan-500">
+      <footer className="grid place-content-center border-t bg-gradient-to-tr from-purple-500 to-cyan-500 p-4">
         <p className="font-bold text-slate-950">
           Crafted by Okunola Abdulwasiu
         </p>

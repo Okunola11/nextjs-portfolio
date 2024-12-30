@@ -15,12 +15,12 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="mt-6 md:mt-8 pb-2 md:py-4 flex flex-col-reverse md:flex-row w-full gap-8 justify-center self-center custom-min-height border-b"
+      className="custom-min-height mt-6 flex w-full flex-col-reverse justify-center gap-8 self-center border-b pb-2 md:mt-8 md:flex-row md:py-4"
     >
       <div className="flex-1">
-        <div className="flex flex-col gap-2 w-full">
-          <h1 className="text-center md:text-left text-4xl md:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+        <div className="flex w-full flex-col gap-2">
+          <h1 className="text-center text-4xl font-extrabold md:text-left md:text-5xl">
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               {heroGreeting.title}
             </span>{" "}
             <span className="wave-emoji">{emoji("👋")}</span>
@@ -44,7 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-center">
+      <div className="flex flex-1 justify-center">
         <ProfileImage />
       </div>
     </section>
